@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Gallery</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+            font-family: 'Climate Crisis', cursive;
+    font-size: 70px;
+    font-weight:6000;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 50px;
+		}
+
+		.item {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 30px;
+			border: 1px solid #ddd;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+		}
+
+		.item:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.item img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.item h2 {
+			font-size: 1.2rem;
+			margin: 10px;
+		}
+
+		.item p {
+			font-size: 1rem;
+			margin: 10px;
+			color: #888;
+		}
+	</style>
+</head>
+<body>
+	<h1>Food Gallery</h1>
+	<div class="container">
+		<div class="item">
+			<img src="https://source.unsplash.com/300x300/?Margherita Pizza" alt="Margherita Pizza">
+			<h2>Margherita Pizza</h2>
+			<p>classic Italian pizza features a thin crust, tomato sauce, fresh mozzarella cheese, and basil leaves.</p>
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/300x300/?Pepperoni Pizza" alt="Pepperoni Pizza">
+			<h2>Pepperoni Pizza</h2>
+			<p>deliciously greasy and flavorful pizza that is perfect for those who love a little bit of heat</p>
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/300x300/?Hawaiian Pizza" alt="Hawaiian Pizza:">
+			<h2>Hawaiian Pizza:</h2>
+			<p>love it while others hate it, but it is a popular choice</p>
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/300x300/?Veggie Pizza" alt="Veggie Pizza">
+			<h2>Veggie Pizza</h2>
+			<p>Scolorful and flavorful pizza that is perfect</p>
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/300x300/?BBQ Chicken Pizza,pizza" alt="BBQ Chicken Pizza">
+			<h2>BBQ Chicken Pizza</h2>
+			<p>sweet and tangy pizza that is perfect for those who love the taste of BBQ sauce</p>
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/300x300/?Meat Lovers Pizza" alt="Meat Lovers Pizza">
+			<h2>Meat Lovers Pizza</h2>
+			<p>Hhearty pizza that is perfect for meat lovers</p>
+		</div>
+	</div>
+</body>
+</html>

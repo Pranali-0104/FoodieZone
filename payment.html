@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pay.css">
+        
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form action="">
+                <h1>
+                    <i class="fas fa-shipping-fast"></i>
+                    Shipping Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" name="f-name" placeholder="Enter First Name" required>
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" name="l-name" placeholder="Enter Last Name" required>
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Address</label>
+                    <input type="text" name="address" placeholder="Enter Address" required>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" placeholder="Enter city" required>
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state" placeholder="Enter State" required>
+                    </div>
+                    <div>
+                        <label for="zip">Pin Code</label>
+                        <input type="text" name="zip" placeholder="Enter Pincode" required>
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Credit Card No.</label>
+                    <!-- <input type="text" name="card-num" placeholder="Enter Card No." tabindex="" required   > -->
+                    <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Exp</label>
+                        <input type="password" name="expire" placeholder="Enter Card Expiry" required>
+
+                        <!-- <input type="date"> -->
+                    </div>
+                    <div>
+                        <label for="card-num">CVV</label>
+                        <input type="password" name="security" placeholder="Enter CVV" required>
+                    </div>
+                </div>
+           
+
+                <div class="btn">
+                    <button type="submit" class="success-btn" onclick="displayPopup()">Purchase</button>
+                    
+                    <div class="popup" id="popup">
+                        <img src="images/tick.jpg">
+                        <h2>Thank You!</h2>
+                       <p>Thank you for placing your order</p>
+                        <!-- <a href="deleivery.html"></a> -->
+                        <button type="button" id="confirm-btn" onclick="location.href='deleivery.html'">OK</button>
+                    </div>
+                </form>
+                </div>
+        </div>
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function displayPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
