@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Plus+Jakarta+Sans:wght@400;500;600&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/326281/pexels-photo-326281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     height: 90vh;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.outer-box{
+    /* border: 3px solid red; */
+    background-color: white;
+    margin:auto;
+    transform:translateX(50%) ;
+    height: 420px;
+    width: 420px;
+    border-radius: 32px;
+}
+label{
+    display: block;
+    margin:8px 24px 0 24px;
+    /* color: rgb(71, 66, 66); */
+    font-size: 16px;
+    color: #48443c;
+  }
+
+h1{
+    margin: 16px 24px;
+    font-weight:600;
+    font-size:32px;
+}
+
+span{
+    display: block;
+    font-size: 24px;
+    font-weight:500;
+}
+p{
+    margin:auto 24px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input {
+    margin: 8px 0 0 0;
+    border: 2px solid #dadada;
+    padding: 6px;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight:400 ;
+}
+button{
+    margin:12px 24px;
+    width: 350px;
+    min-height: 50px;
+    color:white;
+    background-color: rgb(17, 128, 201);
+    border-radius: 4px;
+    font-size:x-large;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+h2{
+    color: blanchedalmond;
+}

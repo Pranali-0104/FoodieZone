@@ -1,0 +1,67 @@
+ body{
+    background-image: url("https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position:relative;
+    background-attachment: fixed;
+    background-size:cover;
+    margin-left: 910px;
+} 
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .box
+  {display: flex;
+    flex-direction: column;
+    margin-left: 50vw;
+    background-color:rgba(255, 196, 72,0.5);
+    margin-right: 20vw;
+    width: 30vw;
+    align-items: center;
+    align-content: center;
+    gap: 2vw;
+    padding-top: 8vh;
+    margin-bottom: 10vh;
+    padding-bottom: 4vh;
+    border: 2px solid;
+    border-radius: 20px;
+  }
+input{
+    height: 3rem;
+    width: 26vw;
+    font-family: 'juliee';
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+button{
+    margin:12px 24px;
+    width: 18vw;
+    min-height: 50px;
+    color:white;
+    background-color: rgb(23, 140, 218);
+    border-radius: 10px;
+    font-size:x-large;
+    cursor: pointer;
+    font-family: 'juliee';
+}
+h2{
+    margin-left: 55vw;
+    margin-top: 20vh;
+    font-family: 'juliee';
+    font-size: 5vh;
+}
+h3{
+    font-family: 'juliee';
+    font-size: 30px;
+}
+span{
+    font-family: 'juliee';
+    font-size: 30px;
+}
